@@ -8,7 +8,7 @@
  * Usage: const cheapestItem = getCheapestItem(cart); //=> 'apple'
  */
 
-const { head, pipe, prop, sortBy  } = require('ramda');
+const { head, pipe, prop, sortBy } = require('ramda');
 const cart = require('./cart.js');
 
 const getCheapestItem = pipe(
@@ -19,4 +19,4 @@ const getCheapestItem = pipe(
 
 const result = getCheapestItem(cart);
 
-console.log({result});
+console.log({ result });
