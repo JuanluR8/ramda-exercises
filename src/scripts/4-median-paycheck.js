@@ -9,7 +9,7 @@
  */
 
 const { filter, pluck, lte, median, pipe, flip, divide } = require('ramda');
-const employees = require('./employees');
+const employees = require('../models/4.json');
 
 const formatOutput = (salary) => salary.toLocaleString('en-US', {
   style: 'currency',

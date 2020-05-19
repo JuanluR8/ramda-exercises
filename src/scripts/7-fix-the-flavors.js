@@ -11,7 +11,7 @@
  */
 
 const { map, view, lensPath, pipe, toUpper } = require('ramda');
-const employees = require('./employees.json');
+const employees = require('../models/7.json');
 
 const formatFlavor = (flavor) => `${flavor} is a great flavor`;
 const emphasizeFlavor = pipe(

@@ -9,7 +9,7 @@
  */
 
 const { head, pipe, prop, sortBy } = require('ramda');
-const cart = require('./cart.js');
+const cart = require('../models/2.json');
 
 const getCheapestItem = pipe(
   sortBy(prop('price'))

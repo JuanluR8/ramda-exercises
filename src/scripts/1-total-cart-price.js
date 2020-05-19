@@ -9,7 +9,7 @@
  */
 
 const { pluck, pipe, sum } = require('ramda');
-const cart = require('./cart.js');
+const cart = require('../models/1.json');
 
 const toEUR = pipe(
   (num) => num.toFixed(2)

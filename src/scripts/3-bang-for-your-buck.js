@@ -23,10 +23,10 @@
  */
 
 const { descend, filter, pipe, prop, sort, take } = require('ramda');
-const menu = require('./menu.js');
+const menu = require('../models/3.json');
 
 const getTop3MealsFor = pipe(
-  (maxPrice, menu) => filter(({price}) => price <= maxPrice)(menu)
+  (maxPrice, menu) => filter(({ price }) => price <= maxPrice)(menu)
   , sort(descend(prop('rating')))
   , take(3)
 );

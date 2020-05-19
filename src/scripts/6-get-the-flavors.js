@@ -14,7 +14,7 @@
  */
 
 const { map, view, lensPath } = require('ramda');
-const employees = require('./employees.json');
+const employees = require('../models/6.json');
 
 const getTheFlavors = map(
   view(

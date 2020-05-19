@@ -18,7 +18,7 @@
  */
 
 const { cond, T, map, lte } = require('ramda');
-const scores = require('./scores.json');
+const scores = require('../models/5.json');
 
 const rateScore = (rating) => (score) => `"${score}" is ${rating}`;
 
